@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/bootstrap.css">
+    
+</head>
+<body>
+    <div class="mb-5"></div>
+    <div class="container text-center bg-dark text-light pt-4 pb-5 pl-5 pr-1" style="width: 360px;">
+        <div class="pr-5">
+            <h1 class="text-right" id='result'>0</h1>
+
+
+        <div class="d-flex justify-content-center">
+            <table class="">
+                <tr>
+                    <td><button onclick="press(7)" class="btn btn-primary rounded-circle btn-lg m-1" style="width: 60px; height: 60px;">7</button></td>
+                    <td><button onclick="press(8)" class="btn btn-primary rounded-circle btn-lg m-1" style="width: 60px; height: 60px;">8</button></td>
+                    <td><button onclick="press(9)" class="btn btn-primary rounded-circle btn-lg m-1" style="width: 60px; height: 60px;">9</button></td>
+                    <td><button onclick="div()" class="btn btn-warning rounded-circle btn-lg m-1 font-weight-bold" style="width: 60px; height: 60px;">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="press(4)" class="btn btn-primary rounded-circle btn-lg m-1" style="width: 60px; height: 60px;">4</button></td>
+                    <td><button onclick="press(5)" class="btn btn-primary rounded-circle btn-lg m-1" style="width: 60px; height: 60px;">5</button></td>
+                    <td><button onclick="press(6)" class="btn btn-primary rounded-circle btn-lg m-1" style="width: 60px; height: 60px;">6</button></td>
+                    <td><button onclick="mult()" class="btn btn-warning rounded-circle btn-lg m-1 font-weight-bold" style="width: 60px; height: 60px;">x</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="press(1)" class="btn btn-primary rounded-circle btn-lg m-1" style="width: 60px; height: 60px;">1</button></td>
+                    <td><button onclick="press(2)" class="btn btn-primary rounded-circle btn-lg m-1" style="width: 60px; height: 60px;">2</button></td>
+                    <td><button onclick="press(3)" class="btn btn-primary rounded-circle btn-lg m-1" style="width: 60px; height: 60px;">3</button></td>
+                    <td><button onclick="min()"class="btn btn-warning rounded-circle btn-lg m-1 font-weight-bold" style="width: 60px; height: 60px;">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="reload()" class="btn btn-primary rounded-circle btn-lg m-1" style="width: 60px; height: 60px;">C</button></td>
+                    <td><button onclick="press(0)" class="btn btn-primary rounded-circle btn-lg m-1" style="width: 60px; height: 60px;">0</button></td>
+                    <td><button onclick="press('.')" class="btn btn-primary rounded-circle btn-lg m-1" style="width: 60px; height: 60px;">.</button></td>
+                    <td><button onclick="plus()" class="btn btn-warning rounded-circle btn-lg m-1 font-weight-bold" style="width: 60px; height: 60px;">+</button></td>
+                </tr>
+            </table>
+        </div>
+        <button onclick="calculate()" type="submit" class="btn btn-block mt-2 btn-success font-weight-bold">=</button>
+    </div>
+    
+    <script src="script.js"></script>
+</html>
